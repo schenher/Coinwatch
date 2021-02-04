@@ -32,7 +32,7 @@ class pricewatch():
 				btcprice = "${:,.2f} USD".format(float(btcprice))
 			print("Eth: " + ethprice)
 			print("Btc: " + btcprice)
-			bothprice = "ETH:" + ethprice + " " + "BTC:" + btcprice
+			bothprice = "ETH: " + ethprice + " " + "BTC: " + btcprice
 			await asyncio.sleep(4)
 			await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=bothprice))
 
